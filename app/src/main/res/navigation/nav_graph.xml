@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/getStarted">
+
+    <fragment
+        android:id="@+id/getStarted"
+        android:name="com.example.quoterapp.GetStarted"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStarted_to_categories"
+            app:destination="@id/categories" />
+    </fragment>
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.example.quoterapp.Categories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categories_to_getStarted"
+            app:destination="@id/getStarted" />
+    </fragment>
+    <fragment
+        android:id="@+id/anniversaryFragment"
+        android:name="com.example.quoterapp.AnniversaryFragment"
+        android:label="fragment_anniversary"
+        tools:layout="@layout/fragment_anniversary" />
+    <fragment
+        android:id="@+id/datingFragment"
+        android:name="com.example.quoterapp.DatingFragment"
+        android:label="fragment_dating"
+        tools:layout="@layout/fragment_dating" />
+    <fragment
+        android:id="@+id/fearFragment"
+        android:name="com.example.quoterapp.FearFragment"
+        android:label="fragment_fear"
+        tools:layout="@layout/fragment_fear" />
+    <fragment
+        android:id="@+id/friendshipFragment"
+        android:name="com.example.quoterapp.FriendshipFragment"
+        android:label="fragment_friendship"
+        tools:layout="@layout/fragment_friendship" />
+    <fragment
+        android:id="@+id/funnyFragment"
+        android:name="com.example.quoterapp.FunnyFragment"
+        android:label="fragment_funny"
+        tools:layout="@layout/fragment_funny" />
+    <fragment
+        android:id="@+id/inspirationFragment"
+        android:name="com.example.quoterapp.InspirationFragment"
+        android:label="fragment_inspiration"
+        tools:layout="@layout/fragment_inspiration" />
+    <fragment
+        android:id="@+id/loveFragment"
+        android:name="com.example.quoterapp.LoveFragment"
+        android:label="fragment_love"
+        tools:layout="@layout/fragment_love" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.quoterapp.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>
